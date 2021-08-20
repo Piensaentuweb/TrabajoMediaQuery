@@ -106,10 +106,6 @@ ul{
         top: 0;
     }
 
-    
-    
-    
-
     .links-menu{
         font-size: 14px;
     }
@@ -257,11 +253,43 @@ ul{
         padding-top: 396px !important;
         padding: 0px;
     }
+    .sweet-brown{
+        padding: 0;
+    }
+    .centrado{
+        width: 100%;
+    }
+    .charla-texto{
+        width: 94%;
+    }
 }
 
 @media (max-width: 592px) { 
     .none-mobil{
         display: none;
     }
+    .charla-texto h2{
+        font-size: 28px;
+    }
+  .subtitle{
+    font-size: 25px;
+}
+.parrafo-info{
+    font-size: 18px;
+}
+.img-footer{
+    background-image: url(../img/ciencia2.jpeg);
+    background-size: cover;
+    padding: 34%;
+    width: 30%;
+    padding-top: 18px;
+}
+
+  }
+.subtitle{
+    margin-bottom: 30px;
+}
+.parrafo-info{
+    margin-bottom: 30px;
 }
 

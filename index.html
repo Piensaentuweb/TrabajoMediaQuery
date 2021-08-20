@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Media Query</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gustavo Arancibia">
-	<meta name="description" content="Trabajo clase 9">
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="Trabajo clase 9">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header class="header-home">
-        <!-- MENU -->
+        <!-- INICIO MENU -->
         <nav class="main-menu">
             <a class="logotipo" href="index.html" target="_blank">
                 <!-- LOGOTIPO -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="transform: ;msFilter:;"><circle cx="12.01" cy="12" r="2"></circle><path d="M11.01 22h2l.5-7h-3l.5 7z"></path><path d="M12 2a10 10 0 0 0-2.45 19.68l-.15-2.12a8 8 0 1 1 5.21 0l-.15 2.12A10 10 0 0 0 12 2z"></path><path d="M15.32 9.61a3.44 3.44 0 0 1 .37.68 3.83 3.83 0 0 1 .23.75 3.57 3.57 0 0 1 .09.8 3.66 3.66 0 0 1-.09.81 3.83 3.83 0 0 1-.23.75 3.44 3.44 0 0 1-.37.68 4.7 4.7 0 0 1-.35.43l-.19 2.62a5.33 5.33 0 0 0 .58-.31A5.86 5.86 0 0 0 17 15.2a5.57 5.57 0 0 0 .55-1 5.89 5.89 0 0 0 .35-1.13 6.06 6.06 0 0 0 .1-1.23 6.22 6.22 0 0 0-.13-1.21A6.09 6.09 0 0 0 17 8.49a6.29 6.29 0 0 0-.73-.89 5.67 5.67 0 0 0-.89-.73 6.3 6.3 0 0 0-1-.56A6.17 6.17 0 0 0 13.21 6a6.11 6.11 0 0 0-2.41 0 5.51 5.51 0 0 0-1.13.36 5.57 5.57 0 0 0-1 .55 5.67 5.67 0 0 0-.89.73 6.29 6.29 0 0 0-.78.85 6.09 6.09 0 0 0-.9 2.14 6.21 6.21 0 0 0-.1 1.21 6.06 6.06 0 0 0 .12 1.21 5.89 5.89 0 0 0 .35 1.13 5.57 5.57 0 0 0 .55 1 6.24 6.24 0 0 0 1.62 1.62 5.33 5.33 0 0 0 .58.31L9 14.51a4.7 4.7 0 0 1-.35-.43 3.44 3.44 0 0 1-.37-.68 3.83 3.83 0 0 1-.23-.75 3.65 3.65 0 0 1-.05-.81 3.56 3.56 0 0 1 .08-.8 3.83 3.83 0 0 1 .23-.75 3.44 3.44 0 0 1 .37-.68 4 4 0 0 1 .5-.61 3.87 3.87 0 0 1 .59-.48 3.44 3.44 0 0 1 .68-.37 3.86 3.86 0 0 1 .75-.24 4.36 4.36 0 0 1 1.61 0 3.86 3.86 0 0 1 .75.24 3.58 3.58 0 0 1 1.27.85 3.49 3.49 0 0 1 .49.61z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                    style="transform: ;msFilter:;">
+                    <circle cx="12.01" cy="12" r="2"></circle>
+                    <path d="M11.01 22h2l.5-7h-3l.5 7z"></path>
+                    <path d="M12 2a10 10 0 0 0-2.45 19.68l-.15-2.12a8 8 0 1 1 5.21 0l-.15 2.12A10 10 0 0 0 12 2z">
+                    </path>
+                    <path
+                        d="M15.32 9.61a3.44 3.44 0 0 1 .37.68 3.83 3.83 0 0 1 .23.75 3.57 3.57 0 0 1 .09.8 3.66 3.66 0 0 1-.09.81 3.83 3.83 0 0 1-.23.75 3.44 3.44 0 0 1-.37.68 4.7 4.7 0 0 1-.35.43l-.19 2.62a5.33 5.33 0 0 0 .58-.31A5.86 5.86 0 0 0 17 15.2a5.57 5.57 0 0 0 .55-1 5.89 5.89 0 0 0 .35-1.13 6.06 6.06 0 0 0 .1-1.23 6.22 6.22 0 0 0-.13-1.21A6.09 6.09 0 0 0 17 8.49a6.29 6.29 0 0 0-.73-.89 5.67 5.67 0 0 0-.89-.73 6.3 6.3 0 0 0-1-.56A6.17 6.17 0 0 0 13.21 6a6.11 6.11 0 0 0-2.41 0 5.51 5.51 0 0 0-1.13.36 5.57 5.57 0 0 0-1 .55 5.67 5.67 0 0 0-.89.73 6.29 6.29 0 0 0-.78.85 6.09 6.09 0 0 0-.9 2.14 6.21 6.21 0 0 0-.1 1.21 6.06 6.06 0 0 0 .12 1.21 5.89 5.89 0 0 0 .35 1.13 5.57 5.57 0 0 0 .55 1 6.24 6.24 0 0 0 1.62 1.62 5.33 5.33 0 0 0 .58.31L9 14.51a4.7 4.7 0 0 1-.35-.43 3.44 3.44 0 0 1-.37-.68 3.83 3.83 0 0 1-.23-.75 3.65 3.65 0 0 1-.05-.81 3.56 3.56 0 0 1 .08-.8 3.83 3.83 0 0 1 .23-.75 3.44 3.44 0 0 1 .37-.68 4 4 0 0 1 .5-.61 3.87 3.87 0 0 1 .59-.48 3.44 3.44 0 0 1 .68-.37 3.86 3.86 0 0 1 .75-.24 4.36 4.36 0 0 1 1.61 0 3.86 3.86 0 0 1 .75.24 3.58 3.58 0 0 1 1.27.85 3.49 3.49 0 0 1 .49.61z">
+                    </path>
+                </svg>
             </a>
             <ul class="menu-link-desktop">
                 <li>
@@ -28,7 +39,7 @@
                     <a class="links-menu" href="#">Analisis</a>
                 </li>
                 <li>
-                    <a class="links-menu cta-btn" href="#">Xataka</a>
+                    <a class="links-menu cta-btn" target="_blank" href="https://www.xataka.com/">Xataka</a>
                 </li>
             </ul>
 
@@ -43,40 +54,44 @@
                     <a class="links-menu" href="#">Beneficios</a>
                 </li>
                 <li>
-                    <a class="links-menu cta-btn" href="#">Cotizar</a>
+                    <a class="links-menu cta-btn" target="_blank" href="https://www.xataka.com/">Xataka</a>
                 </li>
             </ul>
         </nav>
     </header>
-	<!-- FIN MENU -->
+    <!-- FIN MENU -->
 
-	<section class="hero-section hero-section-mobil">
-
-
-     
+    <!-- INICIO SECTION 2 -->
+    <section class="hero-section hero-section-mobil">
         <div class="none-mobil">
-		<h1>De cerebro a texto:
-			<br>esta neuroprótesis
-		</h1>
-		<h2 class="subtitulo">es capaz de leer las señales cerebrales para transcribir lo que queremos decir</h2>
-    </div>
-	</section>
+            <h1>De cerebro a texto:
+                <br>esta neuroprótesis
+            </h1>
+            <h2 class="subtitulo">es capaz de leer las señales cerebrales para transcribir lo que queremos decir</h2>
+        </div>
+    </section>
+    <!-- FIN SECTION 2 -->
 
-    	<!-- INICIO SECTION 2 -->
-	<section class="sweet-brown">
-		<div class="centrado">
-			<img src="assets/img/ciencia2.jpeg" alt="speaker" class="charla-speaker">
-			<div class="charla-texto">
-				<h2>Primera demostración exitosa de decodificación<br>directa de palabras completas</h2>
-				<h4 style="margin-bottom: 30px;">Desarrollado por Edward Chang</h4>
-				<p style="margin-bottom: 30px;">Unos investigadores de la Universidad de California San Francisco (UCSF) han conseguido desarrollar una neuroprótesis capaz de detectar las señales del cerebro y transcribirlas en palabras a través de una pantalla. El dispositivo ha sido probado en una persona con diversas parálisis que, gracias a él, ha sido capaz de comunicarse con palabras.</p>
-                <a class="xataka" href="https://www.xataka.com/medicina-y-salud/cerebro-a-texto-esta-neuroprotesis-capaz-leer-senales-cerebrales-para-transcribir-que-queremos-decir">www.xataka.com</a>
-			</div>
- 
-		</div>
-	</section>
-	<!-- FIN SECTION 2 -->
+    <!-- INICIO SECTION 3 -->
+    <section class="sweet-brown">
+        <div class="centrado">
+            <img src="assets/img/ciencia2.jpeg" alt="speaker" class="charla-speaker">
+            <div class="charla-texto">
+                <h2>Primera demostración exitosa de decodificación<br>directa de palabras completas</h2>
+                <h4 class="subtitle" style="margin-bottom: 30px;">Desarrollado por Edward Chang</h4>
+                <p class="parrafo-info">Unos investigadores de la Universidad de California San Francisco (UCSF) han
+                    conseguido desarrollar una neuroprótesis capaz de detectar las señales del cerebro y transcribirlas
+                    en palabras a través de una pantalla. El dispositivo ha sido probado en una persona con diversas
+                    parálisis que, gracias a él, ha sido capaz de comunicarse con palabras.</p>
+                <a class="xataka" target="_blank"
+                    href="https://www.xataka.com/medicina-y-salud/cerebro-a-texto-esta-neuroprotesis-capaz-leer-senales-cerebrales-para-transcribir-que-queremos-decir">www.xataka.com</a>
+                <div class="img-footer"></div>
 
-  
+            </div>
+
+        </div>
+    </section>
+    <!-- FIN SECTION 3 -->
 </body>
+
 </html>
